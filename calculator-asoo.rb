@@ -103,5 +103,131 @@
 
 # end
 
-puts [4, 6, 10].max
+# puts [4, 6, 10].max
 
+# Building a better calculator
+
+# puts "Enter First Number: "
+# num1= gets.chomp().to_f
+# puts "Enter Operator: "
+# op= gets.chomp()
+# puts "Enter Second Number: "
+# num2= gets.chomp().to_f
+
+# if op == "+"
+#   puts (num1 + num2)
+# elsif op == "/"
+#   puts (num1 / num2)
+# elsif op == "*"
+#   puts (num1 * num2)
+# elsif op == "-"
+#   puts (num1 - num2)
+# else
+#   puts "invalid operator"
+# end
+
+# Case Statements
+
+# def get_day_name(day)
+#   day_name = " "
+
+#   case day
+#     when "mon"
+#     day_name = "Monday"
+#     when "tue"
+#     day_name = "Tuesday"
+#     when "wed"
+#     day_name = "Wednesday"
+#     when "thur"
+#     day_name= "Thursday"
+#     when "fri"
+#     day_name = "Friday"
+#     when "sat"
+#     day_name = "Saturday"
+#     when "sun"
+#     day_name = "Sunday"
+#     else
+#     day_name = "Invalid Abbreviation"
+#   end
+
+# return day_name
+# end
+
+# puts get_day_name("tue1")
+
+# While Loops
+
+# index = 0
+
+# while index <= 5
+#   puts index
+#   index += 1 
+
+# end
+
+# Building a guessing game
+
+# secret_word = "Daniel"
+# guess = ""
+# guess_count = 0
+# guess_limit = 5
+# out_of_guesses = false
+
+# while guess != secret_word and !out_of_guesses
+#   if guess_count < guess_limit
+#   puts "Enter your guess: "
+#   guess = gets.chomp()
+#   guess_count += 1
+
+#   else
+#   out_of_guesses = true
+#   end
+  
+# end
+
+# if out_of_guesses
+#   puts  "You Lose"
+# else
+#   puts "You Won!!!"
+# end
+
+
+# For Loop
+
+# friends = ["Kelvin", "Karen", "Oscar", "Angela", "Andy"]
+
+# for j in friends
+# puts j
+# end
+
+# for friend in friends do
+
+# friends = ["Kelvin", "Karen", "Oscar", "Angela", "Andy"]
+
+# friends.each do |j|
+# puts j
+# end
+
+# friends = ["Kelvin", "Karen", "Oscar", "Angela", "Andy"]
+
+# # for index in 0..5
+# #   puts index
+# # end
+
+# 6.times do |index|
+#   puts index
+# end
+
+# Exponent Method
+
+def pow (base_num, pow_num)
+  
+  result = 1
+
+  pow_num.times do |index|
+  result = result * base_num
+  end
+  return result
+end
+
+puts pow(3, 9)
